@@ -1,6 +1,3 @@
-# General Description: Studying Interconnections of Occupation's Distribution of Skill Importance and Skill Categories' Importance Distributions
-## Link to the latext file (?): https://www.overleaf.com/8811855357wspqcczxkpbs
-
 # SECTIONS:
 # 1. INITIATION
 # 2. LOADING DATA
@@ -10,28 +7,14 @@
 #==============================================================================================
 library(dplyr)
 library(tidyr)
-library(ggplot2)
 library(crayon)
 library(tm)
 library(readxl)
-library(ggrepel)
-library(stargazer)
 library(data.table)
 library(stringr)
 library(data.tree)
-library(parallel)
 library(mclust)
 library(moments)
-library(lsa) ## For cosine function
-library(NbClust) ## For NbClust function
-library(DescTools) ## Needed for weighted sd: SD
-library(patchwork)
-library(ggthemes)
-library(png)
-library(igraph)
-library(ggpattern) ## Needed for patterned bar plots
-library(markovchain)
-
 
 
 rm(list = ls())
