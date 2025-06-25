@@ -412,7 +412,8 @@ nested_simul <- do.call(rbind, lapply(1:length(uniq_skills), function(i){
     simul_occ_skill_Binm <- as.numeric(vegan::nestedbetasor(t(simul_mat))[2])
     simul_occ_skill_div = as.numeric(nesteddisc(t(simul_mat), niter = 10)$statistic)
     simul_occ_skill_Nc = as.numeric(Nc(t(simul_mat))$Nc)
-    return(data.frame(element_ID = uniq_skills[i], iter = iter, 
+    return(data.frame(element_ID = uniq_skills[i], iter = iter,
+                      NODF = simul_NODF$statistic[3], NODF_col = simul_NODF$statistic[1], NODF_row = simul_NODF$statistic[2],
                       C = simul_skill_occ_C, C_t = simul_occ_skill_C,
                       Binm = simul_skill_occ_Binm, Binm_t = simul_occ_skill_Binm,
                       div = simul_skill_occ_div, div_t = simul_occ_skill_div,
