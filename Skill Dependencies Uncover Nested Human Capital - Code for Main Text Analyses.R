@@ -427,7 +427,7 @@ nested_simul <- do.call(rbind, lapply(1:length(uniq_skills), function(i){
 skill_nest_contrib <- nested_simul %>% group_by(element_ID) %>% 
   summarise(c_i_C = (as.numeric(obs_skill_occ_C) - mean(C))/sd(C), c_i_Binm = (as.numeric(obs_skill_occ_Binm) - mean(Binm))/sd(Binm),
             c_i_Nc = (as.numeric(obs_skill_occ_Nc) - mean(Nc))/sd(Nc), c_i_div = (as.numeric(obs_skill_occ_div) - mean(div))/sd(div),
-            c_i_NODF = (as.numeric(obs_NODF$statistic[2]) - mean(row_NODF))/sd(row_NODF)) %>%
+            c_i_NODF = (as.numeric(obs_NODF$statistic[2]) - mean(NODF_row))/sd(NODF_row)) %>%
   left_join(skills_names %>% select(element_ID, element_title)) %>% 
   left_join(occ_educ_df %>% inner_join(skills_occ_raw[,c('occ_8_dig','element_ID','Level')]) %>% 
               group_by(element_ID) %>% summarise(level_educ = sum(Education.Avg*Level)/sum(Level)), by = "element_ID") %>%
