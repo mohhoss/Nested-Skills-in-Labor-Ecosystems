@@ -1,6 +1,11 @@
 # Nested-Skills-in-Labor-Ecosystems
-The repository holds a subset of R and Python code used in preparing the project Nested Skills in Labor Ecosystems: A Hidden Dimension of Human Capital.
-Find a preprint here: https://arxiv.org/abs/2303.15629
+The repository holds a subset of R and Python code used in preparing the paper Skill dependencies uncover nested human capital.
+Find the published version in Nature: https://www.nature.com/articles/s41562-024-02093-2
+
+## Networks
+The binary data based on Serrano et al 2009 is in file: https://www.nature.com/articles/s41562-024-02093-2
+The skill clustering and nested division of skills is in file (also produced with the R code in the repo): preferred Skill Clustering and subtypes - Aug 5 2023.csv
+The code to produce the skill hierarchy: Creating the skill hierarchy network.ipynb
 
 ## Bootstrapping Burning Glass Job Sequence
 The sample upon which the code operates is cleaned job sequences obtained from Burning Glass resumes in the form of Data.Frame.
