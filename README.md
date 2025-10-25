@@ -4,8 +4,11 @@ Find the published version in Nature: https://www.nature.com/articles/s41562-024
 
 ## Networks
 The binary data based on Serrano et al 2009 is in file: Binary Skill-Occupation Bipartite - a la Serrano et al 2009 - alpha_in = 0.4, alpha_out = 0.275 - Nov 2022.csv
+
 The skill clustering and nested division of skills is in file (also produced with the R code in the repo): preferred Skill Clustering and subtypes - Aug 5 2023.csv
+
 The code to produce the skill hierarchy: Creating the skill hierarchy network.ipynb
+
 
 ## Bootstrapping Burning Glass Job Sequence
 The sample upon which the code operates is cleaned job sequences obtained from Burning Glass resumes in the form of Data.Frame.
