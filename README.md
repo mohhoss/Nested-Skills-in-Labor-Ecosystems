@@ -3,7 +3,7 @@ The repository holds a subset of R and Python code used in preparing the paper S
 Find the published version in Nature: https://www.nature.com/articles/s41562-024-02093-2
 
 ## Networks
-The binary data based on Serrano et al 2009 is in file: https://www.nature.com/articles/s41562-024-02093-2
+The binary data based on Serrano et al 2009 is in file: Binary Skill-Occupation Bipartite - a la Serrano et al 2009 - alpha_in = 0.4, alpha_out = 0.275 - Nov 2022.csv
 The skill clustering and nested division of skills is in file (also produced with the R code in the repo): preferred Skill Clustering and subtypes - Aug 5 2023.csv
 The code to produce the skill hierarchy: Creating the skill hierarchy network.ipynb
 
